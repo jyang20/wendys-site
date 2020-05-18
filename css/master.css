@@ -3,6 +3,10 @@
  * By Jessie Yang
  */
 
+:root{
+    --header-height: 70px;
+}
+
 /*------------ Home ------------*/
 body{
     background-color: white;
@@ -10,17 +14,19 @@ body{
 }
 
 header{
-
+    padding: 0 25px 0 0;
 }
 
 .logo{
-    height: 50px;
+    height: var(--header-height);
     max-width: auto;
 }
 
 /* Menu stuff */
+/* TODO: When the window is too small, move to hamburger */
 .menu{
     float: right;
+    font-size: 20px;
 }
 .menu a{
     color: black;
@@ -28,8 +34,8 @@ header{
 }
 
 .menu td {
-    height: 50px;
-    width: 100px;
+    height: var(--header-height);
+    width: 120px;
     text-align: center;
     vertical-align: middle;
 }
@@ -37,16 +43,22 @@ header{
 .menu td:hover {background-color: lightblue;}
 
 /* Main */
-.frontpage{
+/* .frontpage h1{
     margin: 50px 70px 70px;
     line-height: 60px;
     font-size: 50px;
+} */
+
+.frontpage {
+    width: 90%;
+    height: auto;
+    padding: 20px 50px;
 }
 
 .map{
     width: 90%;
     height: auto;
-    padding: 0 50px 50px;
+    padding: 20px 50px 50px;
 }
 
 /* Footer */

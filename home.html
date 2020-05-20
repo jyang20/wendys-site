@@ -1,3 +1,5 @@
+<!-- https://jyang20.github.io/wendys-site/home -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -6,37 +8,53 @@
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Navigation Stuff -->
+    <nav class="nav-main widescreen" id="navbar-wide">
         <a href="#"><img class="logo" src="img/fake-logo.png"></a>
-        <table class="menu">
-            <tr>
-                <td><a href="#">HOME</a></td>
-                <td><a href="#">VISION</a></td>
-                <td><a href="#">MAP</a></td>
-                <td><a href="#">ABOUT US</a></td>
-            </tr>
-        </table>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#">works</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-main smallscreen" id="navbar-small">
+        <a href="#"><img class="logo" src="img/fake-logo.png"></a>
+        <div class="btn-toggle-nav" onclick="toggleNav()" ></div>
+    </nav>
+    <div class="nav-sidebar">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#">works</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Headder Video -->
+    <header>
+        <iframe width=100% height=750px src="https://www.youtube.com/embed/oSmUI3m2kLk?autoplay=1"></iframe>
     </header>
 
     <!-- Main -->
     <main>
-        <iframe width=100% height=750px src="https://www.youtube.com/embed/oSmUI3m2kLk?autoplay=1"></iframe>
-        <!-- <h1 class="frontpage">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</h1> -->
+        <!-- tbt to when there was actually text on the page
+        <h1 class="frontpage">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</h1> -->
         <img class="frontpage" src="img/lorem_ipsum.png">
-        <a href="#"><img class="map" src="img/USAgraphic.png"></a>
+        <a href="#"><img class="frontpage" src="img/USAgraphic.png"></a>
     </main>
 
     <!-- Footer -->
     <footer>
-        <table class="icon">
-            <tr>
-                <td><a href="#"><img src="img/facebook.png"></a></td>
-                <td><a href="#"><img src="img/instagram.png"></a></td>
-                <td><a href="#"><img src="img/twitter.png"></a></td>
-            </tr>
-        </table>
-        <p class="footertext">Contact</p>
+        <!-- Each list item contains an icon and a link -->
+        <ul class="social-media">
+            <li><a href="#"><img class="icon" src="img/facebook.png"></a> <a href="#" class="link">facebook.com/WendyLi</a></li>
+            <li><a href="#"><img class="icon" src="img/instagram.png"></a> <a href="#" class="link">instagram.com/WendyLi</a></li>
+            <li><a href="#"><img class="icon" src="img/twitter.png"></a> <a href="#" class="link">twitter.com/WendyLi</a></li>
+        </ul>
+        <a href="#">Contact</a>
     </footer>
 </body>
 

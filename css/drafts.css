@@ -1,0 +1,145 @@
+/*
+ * CSS file for Wendy's website!
+ * By Jessie Yang
+ */
+
+:root{
+    --header-height: 70px;
+}
+
+/*------------ Home ------------*/
+body{
+    background-color: white;
+    margin: 0;
+}
+
+nav{
+    padding: 0 20px 0 0;
+}
+
+.logo{
+    height: var(--header-height);
+    max-width: auto;
+}
+
+/* Menu stuff */
+/* TODO: When the window is too small, move to hamburger */
+/* .menu{
+    float: right;
+    font-size: 20px;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu td {
+    height: var(--header-height);
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu td:hover {background-color: lightblue;} */
+
+.nav-main ul {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    float: right;
+}
+
+.nav-main ul li {
+    list-style: none;
+    line-height: 41px;
+}
+
+.nav-main ul li a {
+    display: block;
+    height: 100%;
+    padding: 0 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-main ul li a:hover {
+    background-color: lightblue;
+}
+
+.toggle-nav {
+    position: fixed;
+    right: 162px;
+    top: calc(var(--header-height) - 20px);
+    padding: 0;
+    background-color: white;
+    width: 160px;
+    height: 0;
+    z-index: 1000;
+}
+.toggle-nav ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.toggle-nav ul li {
+    list-style: none;
+    line-height: 20px;
+    padding: 10px 20px;
+}
+
+.toggle-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.toggle-nav ul li:hover {
+    background-color: lightblue;
+}
+
+/* Main */
+/* .frontpage h1{
+    margin: 50px 70px 70px;
+    line-height: 60px;
+    font-size: 50px;
+} */
+
+.frontpage {
+    width: 90%;
+    height: auto;
+    padding: 20px 50px;
+}
+
+.map{
+    width: 90%;
+    height: auto;
+    padding: 20px 50px 50px;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 100px;
+}
+.footertext{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px
+}
+.icon{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    /* height: 5px; */
+    width: 200px;
+}
+.icon img{
+    width: 30px;
+    height: auto;
+}
